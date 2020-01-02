@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script type="text/javascript" language="JavaScript" src="main.js"></script>
+		<style>
+			.td_b{
+				border-top:solid 1px black;
+				text-align:right;
+			}
+		</style>
+	</head>
+	<body>
+		<p style="text-align:center;text-decoration:underline;">Point Group Flowchart</p>
+		<table id="main_flow" style="margin:0 auto;border-collapse:collapse;">
+			<tbody>
+				<tr id="r_0">
+					<td>Linear Molecule?</td>
+					<td><input type="checkbox" id="q_0"></td>
+				</tr>
+				<tr id="r_0_1" style="display:none;">
+					<td><i>i</i>?</td>
+					<td><input type="checkbox" id="q_0_1"></td>
+				</tr>
+				<tr id="r_1">
+					<td>2 or more C<sub>n</sub> axes, n > 2?</td>
+					<td><input type="checkbox" id="q_1"></td>
+				</tr>
+				<tr id="r_1_1" style="display:none;">
+					<td><i>i</i>?</td>
+					<td><input type="checkbox" id="q_1_1"></td>
+				</tr>
+				<tr id="r_1_2" style="display:none;">
+					<td>C<sub>5</sub> axis?</td>
+					<td><input type="checkbox" id="q_1_2"></td>
+				</tr>
+				<tr id="r_2">
+					<td>C<sub>n</sub> axis?</td>
+					<td><input type="checkbox" id="q_2"></td>
+					<td id="q_2_a" style="display:none;">n = </td>
+					<td id="q_2_b" style="display:none;">
+						<select id="q_2_n">
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+						</select>
+					</td>
+				</tr>
+				<tr id="r_2_1" style="display:none;">
+					<td>C<sub>2</sub> axes &perp; the principal axis?</td>
+					<td><input type="checkbox" id="q_2_1"></td>
+				</tr>
+				<tr id="r_2_1_1" style="display:none;">
+					<td>&sigma;<sub>h</sub>?</td>
+					<td><input type="checkbox" id="q_2_1_1"></td>
+				</tr>
+				<tr id="r_2_1_2" style="display:none;">
+					<td>n &sigma;<sub>d</sub>?</td>
+					<td><input type="checkbox" id="q_2_1_2"></td>
+				</tr>
+				<tr id="r_2_2" style="display:none;">
+					<td>&sigma;<sub>h</sub>?</td>
+					<td><input type="checkbox" id="q_2_2"></td>
+				</tr>
+				<tr id="r_2_3" style="display:none;">
+					<td>&sigma;<sub>v</sub>?</td>
+					<td><input type="checkbox" id="q_2_3"></td>
+				</tr>
+				<tr id="r_2_4" style="display:none;">
+					<td>S<sub>2n</sub> axis?</td>
+					<td><input type="checkbox" id="q_2_4"></td>
+				</tr>
+				<tr id="r_3">
+					<td>&sigma;?</td>
+					<td><input type="checkbox" id="q_3"></td>
+				</tr>
+				<tr id="r_4">
+					<td><i>i</i>?</td>
+					<td><input type="checkbox" id="q_4"></td>
+				</tr>
+				<tr id="result" >
+					<td class="td_b">Group: </td>
+					<td class="td_b" id="group">C<sub>1</sub></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
