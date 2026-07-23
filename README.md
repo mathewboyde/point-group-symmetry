@@ -1,12 +1,5 @@
 # point-group-symmetry
-Interactive point group flowchart
 
-# This is free-to-use software.
+This project is a very simple treatment of point group symmetries.
 
-A lot of information about a molecule can be determined from its symmetry group.
-This is a simple flowchart for determining the point group representation of
-any molecule. That being said, this is only a step to determining the irreducible
-representations and calculating the orbital energy (includiing HOMO and LUMO orbital)
-levels. I will add to this file as I include those determinations/calculations. Enjoy.
-
--Mathew
+In brief, point group symmetry describes any, and all, spatial symmetry operations a molecule or geometric object can experience while leaving at least one central point unchanged. The types symmetry operations that can be executed are reflections (σ), rotations (proper/C or improper/S), and inversions (i). These operations can be performed in perpendicular (⊥) planes or along spatial axes. The combination of certain applicable operations defines the point group that a molecule or geometric object possesses.
