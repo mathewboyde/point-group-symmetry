@@ -1,0 +1,104 @@
+html, body, #main {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#main {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.text_title {
+	font-size: 7.5vw;
+	padding: 2vw 0;
+	margin:0 auto;
+}
+#main_flowchart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid 1px black;
+	width: 90vw;
+}
+.text_subtitle {
+	font-size: 5vw;
+	padding: 1vw 0;
+	width: 90%;
+	text-align: center;
+	border-bottom: solid 1px black;
+	margin:0 auto;
+}
+.text_body {
+	display: block;
+	padding: 2.5vw 0;
+	width: 90%;
+	font-family: "Arial";
+	font-size: 3vw;
+	margin: 0 auto;
+	text-align: justify;
+	line-height: 7vw;
+}
+#main_flowchart_controls {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 1vw 0 ;
+	align-items:center;
+}
+.main_flowchart_controls_individual {
+	display: flex;
+	flex-direction: row;
+	width: 98%;
+	padding: 1vw;
+	align-items:center;
+}
+.main_flowchart_controls_label {
+	width: 50%;
+	font-size: 3vw;
+	flex-grow: 1;
+}
+.main_flowchart_controls_input {
+	flex-shrink:1;
+}
+select {
+	font-size: 3vw;
+	padding: 2vw 0;
+}
+hr {
+	border: none;
+	height: 1px;
+	background-color: black;
+	width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+	.text_title {
+		font-size: 3vw;
+		padding: 1vw 0;
+	}
+	.text_subtitle {
+		font-size: 2.5vw;
+	}
+	.text_body {
+		width: 70vw;
+		padding: 1.25vw 0;
+		font-size: 1.5vw;
+		line-height: 3vw;
+	}
+	.main_flowchart_controls_label {
+		font-size: 1.5vw;
+	}
+	select {
+		font-size: 1.25vw;
+		padding: 0.25vw 0;
+	}
+	#main_flowchart {
+		width: 70vw;
+	}
+	.main_flowchart_controls_individual {
+		padding: 0.5vw;
+	}
+}

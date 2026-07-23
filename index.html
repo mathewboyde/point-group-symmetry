@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" language="JavaScript" src="js/jquery.js"></script>
+		<script type="text/javascript" language="JavaScript" src="js/main.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<title>Point Group Flowchart</title>
+	</head>
+	<body>
+		<div id="main">
+			<p class="text_title">Point Group Flowchart</p>
+			<p class="text_body" style="text-align:center;">
+				This project is a very simple treatment of point group symmetries.
+			</p>
+			<div id="main_flowchart">
+				<p class="text_subtitle">Symmetry Flowchart</p>
+				<div id="main_flowchart_controls">
+					<div id="r0" class="main_flowchart_controls_individual">
+						<div class="main_flowchart_controls_label">Linear?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q0"></div>
+					</div>
+					<div id="r0_1" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label"><i>i</i>?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q0_1"></div>
+					</div>
+					<div id="r1" class="main_flowchart_controls_individual">
+						<div class="main_flowchart_controls_label">2 or more C<sub>n</sub> axes, n > 2?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q1"></div>
+					</div>
+					<div id="r1_1" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label"><i>i</i>?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q1_1"></div>
+					</div>
+					<div id="r1_1_1" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label">C<sub>5</sub> axis?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q1_1_1"></div>
+					</div>
+					<div id="r2" class="main_flowchart_controls_individual">
+						<div class="main_flowchart_controls_label">C<sub>n</sub> axis?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q2"></div>
+					</div>
+					<div id="r2_1" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label" style="text-align:right;padding-right:5px;">n =</div>
+						<div class="main_flowchart_controls_input">
+							<select id="q2_1">
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+						</div>
+					</div>
+					<div id="r2_2" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label">C<sub>2</sub> axes &perp; the principal axis?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q2_2"></div>
+					</div>
+					<div id="r2_2_1" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label">&sigma;<sub>h</sub>?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q2_2_1"></div>
+					</div>
+					<div id="r2_2_2" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label">n &sigma;<sub>d</sub>?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q2_2_2"></div>
+					</div>
+					<div id="r2_3" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label">&sigma;<sub>h</sub>?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q2_3"></div>
+					</div>
+					<div id="r2_4" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label">&sigma;<sub>v</sub>?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q2_4"></div>
+					</div>
+					<div id="r2_5" class="main_flowchart_controls_individual" style="display:none;">
+						<div class="main_flowchart_controls_label">S<sub>2n</sub> axis?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q2_5"></div>
+					</div>
+					<div id="r3" class="main_flowchart_controls_individual">
+						<div class="main_flowchart_controls_label">&sigma;?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q3"></div>
+					</div>
+					<div id="r4" class="main_flowchart_controls_individual">
+						<div class="main_flowchart_controls_label"><i>i</i>?</div>
+						<div class="main_flowchart_controls_input"><input type="checkbox" id="q4"></div>
+					</div>
+					<hr/>
+					<div class="main_flowchart_controls_individual">
+						<div id="final_result" class="main_flowchart_controls_label" style="text-align:right;">Group: C<sub>1</sub></div>
+					</div>
+				</div>
+			</div>
+			<p class="text_body">
+				&nbsp;&nbsp;&nbsp;&nbsp;In brief, point group symmetry describes any, and all, spatial symmetry operations a molecule or geometric 
+				object can experience while leaving at least one central point unchanged. The types symmetry operations that can be executed are 
+				reflections (&sigma;), rotations (proper/C or improper/S), and inversions (<i>i</i>). These operations can be performed in perpendicular 
+				(&perp;) planes or along spatial axes. The combination of certain applicable operations defines the point group that a molecule or geometric 
+				object possesses. 
+			</p>
+		</div>
+	</body>
+</html>
